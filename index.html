@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cubo com Texturas</title>
+    <style>
+        body { margin: 0; overflow: hidden; }
+        button {
+            position: absolute;
+            padding: 10px;
+            font-size: 16px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #up { top: 10px; left: 50%; transform: translateX(-50%); }
+        #down { bottom: 10px; left: 50%; transform: translateX(-50%); }
+        #left { left: 10px; top: 50%; transform: translateY(-50%); }
+        #right { right: 10px; top: 50%; transform: translateY(-50%); }
+    </style>
+</head>
+<body>
+    <button id="up">Para Cima</button>
+    <button id="down">Para Baixo</button>
+    <button id="left">Esquerda</button>
+    <button id="right">Direita</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
